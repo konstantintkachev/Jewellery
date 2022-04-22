@@ -1,0 +1,69 @@
+.intro-catalog {
+  background-image: url("../img/content/intro-catalog@1x.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $color-default-white;
+  background-color: $color-medium-wood;
+
+  @include vp-1023 {
+    background-image: url("../img/content/intro-catalog-tablet@1x.webp");
+
+    @include retina {
+      background-image: url("../img/content/intro-catalog-tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/content/intro-catalog-mobile@1x.webp");
+
+    @include retina {
+      background-image: url("../img/content/intro-catalog-mobile@2x.webp");
+    }
+  }
+
+  @media (min-width: 1024px) {
+    @include retina {
+      background-image: url("../img/content/intro-catalog@2x.webp");
+    }
+  }
+}
+
+.intro-catalog__container {
+  padding: 90px 30px 94px;
+
+  @include vp-1023 {
+    padding: 92px 45px 96px;
+  }
+
+  @include vp-767 {
+    padding: 80px 15px 79px;
+  }
+}
+
+.intro-catalog__container h2 {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  font-family: $ff-cormorant-garamond;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  margin-bottom: 4px;
+
+  @include vp-1023 {
+    margin-bottom: 0;
+  }
+}
+
+.intro-catalog__container p {
+  margin: 0;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  font-family: $ff-cormorant-garamond;
+  text-align: center;
+}

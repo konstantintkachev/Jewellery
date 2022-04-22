@@ -1,0 +1,283 @@
+.form-filter form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-filter__list {
+  margin-bottom: 35px;
+  border: 1px solid $color-medium-wood;
+}
+
+.form-filter__item {
+  padding: 22px 21px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-medium-wood;
+  }
+
+  @include vp-1023 {
+    border-bottom: 1px solid $color-medium-wood;
+  }
+}
+
+.form-filter__button {
+  width: 100%;
+  text-align: start;
+  background-color: $color-transparent;
+  border: none;
+  line-height: 21px;
+  font-weight: 500;
+  cursor: pointer;
+
+  @include vp-1023 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form-filter__button-close {
+  display: none;
+}
+
+.form-filter__fields {
+  margin-top: 19px;
+  padding-left: 13px;
+
+  @include vp-1023 {
+    margin-top: 21px;
+    padding-left: 14px;
+  }
+}
+
+.form-filter__field {
+  &:not(:last-child) {
+    margin-bottom: 11px;
+
+    @include vp-1023 {
+      margin-bottom: 14px;
+    }
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &:focus-within {
+    label::before {
+      border: 2px solid $color-wood-bark;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form-filter__field label {
+  padding-left: 27px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  position: relative;
+
+  @include vp-1023 {
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $color-medium-wood;
+
+    @include vp-1023 {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.form-filter__field input:checked ~ label::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 15px;
+  height: 15px;
+  background-color: $color-medium-wood;
+
+  @include vp-1023 {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.form-filter__button-submit {
+  min-height: 68px;
+  margin-bottom: 26px;
+  background-color: $color-medium-wood;
+  color: $color-default-white;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form-filter__button-reset {
+  min-height: 66px;
+  border: 1px solid $color-medium-wood;
+  background-color: $color-transparent;
+  color: $color-wood-bark;
+  font-weight: 500;
+  cursor: pointer;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.is-mobile {
+  @include vp-1023 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    overflow-y: scroll;
+    background-color: $color-default-white;
+    padding-bottom: 89px;
+
+    @include vp-767 {
+      padding-bottom: 60px;
+    }
+
+    form {
+      width: 442px;
+      min-height: 841px;
+      margin-top: 27px;
+      margin-left: -19px;
+      box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
+      position: relative;
+
+      @include vp-767 {
+        width: 270px;
+        min-height: 736px;
+        margin: 76px 25px 0;
+      }
+    }
+
+    .form-filter__button-close {
+      position: absolute;
+      top: -14px;
+      right: -16px;
+      display: block;
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      background-color: $color-default-black;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+
+      @include vp-767 {
+        top: -12px;
+        right: -5px;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 9px;
+        width: 14px;
+        height: 2px;
+        background-color: $color-default-white;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+
+      @media (hover: hover), screen and (min-width: 0\0) {
+        &:hover,
+        &:focus {
+          background-color: $color-medium-wood;
+        }
+
+        &:active {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .form-filter__list {
+      border: none;
+      margin-bottom: 40px;
+
+      @include vp-767 {
+        margin-bottom: 30px;
+      }
+    }
+
+    .form-filter__item {
+      padding: 33px 35px 34px;
+
+      @include vp-767 {
+        padding: 23px 15px 24.5px;
+      }
+    }
+
+    .form-filter__button-submit {
+      margin: 0 40px 26px;
+
+      @include vp-767 {
+        margin: 0 20px 20px;
+      }
+    }
+
+    .form-filter__button-reset {
+      margin: 0 40px;
+      margin-bottom: 40px;
+
+      @include vp-767 {
+        margin: 0 20px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

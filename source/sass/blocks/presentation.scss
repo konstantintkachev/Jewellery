@@ -1,0 +1,91 @@
+.presentation {
+  background-image: url("../img/content/intro-desktop@1x.webp");
+  background-color: $color-medium-wood;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include vp-1023 {
+    background-image: url("../img/content/intro-tablet@1x.webp");
+
+    @include retina {
+      background-image: url("../img/content/intro-tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/content/intro-mobile@1x.webp");
+
+    @include retina {
+      background-image: url("../img/content/intro-mobile@2x.webp");
+    }
+  }
+
+  @media (min-width: 1024px) {
+    @include retina {
+      background-image: url("../img/content/intro-desktop@2x.webp");
+    }
+  }
+}
+
+.presentation__container {
+  width: 100%;
+  max-width: $vp-1230;
+  min-width: $vp-320;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-top: 183px;
+  padding-bottom: 180px;
+  color: $color-default-white;
+  font-family: $ff-cormorant-garamond;
+
+  @include vp-1023 {
+    padding: 182px 45px 179px;
+  }
+
+  @include vp-767 {
+    padding: 190px 15px 191px;
+  }
+}
+
+.presentation__container h2 {
+  max-width: 570px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 58px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  @include vp-1023 {
+    padding-right: 19px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    padding-bottom: 5px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+
+.presentation__container p {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 38px;
+  text-align: center;
+  line-height: 49px;
+  margin: 0;
+  margin-top: -6px;
+
+  @include vp-1023 {
+    margin-right: 17px;
+  }
+
+  @include vp-767 {
+    font-size: 34px;
+    line-height: 36px;
+    margin-right: 0;
+  }
+}

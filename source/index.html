@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ппроект Jewellery" />
+    <title>Jewellery</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="preload"
+      href="fonts/poppins-medium.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/poppins-regular.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/poppins-bold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/cormorant-garamond-semi-bold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/cormorant-garamond-bold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/cormorant-garamond-italic.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="page-header" data-menu="wrapper-open">
+        <div class="page-header__container">
+          <div class="page-header__header">
+            <button
+              class="page-header_btn"
+              type="button"
+              aria-label="Открыть меню"
+              data-menu="toggle-menu"
+            ></button>
+            <div class="page-header__form">
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                <div class="page-header__form-field">
+                  <label>
+                    <span class="visually-hidden">Field of search</span>
+                    <input
+                      type="search"
+                      name="search"
+                      id="search"
+                      placeholder="Type here to search"
+                    />
+                  </label>
+                </div>
+                <button
+                  class="page-header__form-btn"
+                  type="submit"
+                  aria-label="Отправить форму"
+                >
+                  <svg width="14" height="14">
+                    <use href="img/sprite_auto.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <a class="page-header__logo" aria-label="Ссылка на главное меню">
+              <svg width="66" height="66">
+                <use href="img/sprite_auto.svg#logo"></use>
+              </svg>
+            </a>
+            <div class="page-header__menu">
+              <a
+                class="page-header__login"
+                href="login.html"
+                data-open-modal="login"
+                >Login</a
+              >
+              <a class="page-header__cart" href="#">
+                <span class="page-header__cart-text"
+                  >Cart<span class="page-header__cart-number">0</span></span
+                >
+                <svg class="page-header__cart-icon" width="18" height="16">
+                  <use href="img/sprite_auto.svg#icon-basket"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <nav class="page-header__nav main-nav">
+            <div class="main-nav__container">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--first">
+                  <a class="main-nav__link" href="#">What’s new</a>
+                </li>
+                <li class="main-nav__item main-nav__item--second">
+                  <a class="main-nav__link" href="#">Chokers</a>
+                </li>
+                <li class="main-nav__item main-nav__item--third">
+                  <a class="main-nav__link" href="#">Necklaces</a>
+                </li>
+                <li class="main-nav__item main-nav__item--fourth">
+                  <a class="main-nav__link" href="#">Rings</a>
+                </li>
+                <li class="main-nav__item main-nav__item--fifth">
+                  <a class="main-nav__link" href="#">Earrings</a>
+                </li>
+              </ul>
+
+              <ul class="main-nav__info">
+                <li class="main-nav__info-item">
+                  <a class="main-nav__info-link" href="#">About CH</a>
+                </li>
+                <li class="main-nav__info-item">
+                  <a class="main-nav__info-link" href="#">Stores & Hours</a>
+                </li>
+                <li class="main-nav__info-item">
+                  <a class="main-nav__info-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="presentation">
+          <h1 class="visually-hidden">Jewellery for you</h1>
+          <div class="presentation__container">
+            <h2>Perfection</h2>
+            <p>made to be yours</p>
+          </div>
+        </section>
+
+        <section class="slider">
+          <h2>New In</h2>
+          <a class="slider__link" href="catalog.html">Shop Now</a>
+          <button
+            class="slider__btn slider__btn--prev"
+            aria-label="Предыдущий слайд"
+          ></button>
+          <button
+            class="slider__btn slider__btn--next"
+            aria-label="Следующий слайд"
+          ></button>
+          <div class="slider__container swiper">
+            <ul class="slider__list swiper-wrapper">
+              <li class="slider__item swiper-slide">
+                <a class="slider__product-link" href="catalog.html">
+                  <div class="slider__img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/purple-gemstone-necklace-tablet@1x.webp,
+                          img/content/purple-gemstone-necklace-tablet@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/content/purple-gemstone-necklace@1x.webp,
+                          img/content/purple-gemstone-necklace@2x.webp 2x
+                        "
+                      />
+                      <!-- 1х: 324px; 2x: 648px -->
+                      <source
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/purple-gemstone-necklace-tablet@1x.jpg 1x,
+                          img/content/purple-gemstone-necklace-tablet@2x.jpg 2x
+                        "
+                      />
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img
+                        src="img/content/purple-gemstone-necklace@1x.jpg"
+                        srcset="img/content/purple-gemstone-necklace@2x.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="Necklace with amethyst"
+                      />
+                    </picture>
+                  </div>
+                  <h3
+                    class="slider__name-product slider__name-product--necklace"
+                  >
+                    Necklace with amethyst
+                  </h3>
+                  <span class="slider__price">$145</span>
+                </a>
+              </li>
+              <li class="slider__item swiper-slide">
+                <a
+                  class="slider__product-link swiper__link"
+                  href="catalog.html"
+                >
+                  <div class="slider__img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/layered-choker-necklace-tablet@1x.webp,
+                          img/content/layered-choker-necklace-tablet@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/content/layered-choker-necklace@1x.webp,
+                          img/content/layered-choker-necklace@2x.webp 2x
+                        "
+                      />
+                      <!-- 1х: 324px; 2x: 648px -->
+                      <source
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/layered-choker-necklace-tablet@1x.jpg 1x,
+                          img/content/layered-choker-necklace-tablet@2x.jpg 2x
+                        "
+                      />
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img
+                        src="img/content/layered-choker-necklace@1x.jpg"
+                        srcset="img/content/layered-choker-necklace@2x.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="Layered choker"
+                      />
+                    </picture>
+                  </div>
+                  <h3 class="slider__name-product slider__name-product--сhoker">
+                    Layered сhoker
+                  </h3>
+                  <span class="slider__price">$115</span>
+                </a>
+              </li>
+              <li class="slider__item swiper-slide">
+                <a
+                  class="slider__product-link swiper__link"
+                  href="catalog.html"
+                >
+                  <div class="slider__img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/dainty-gold-necklace-tablet@1x.webp,
+                          img/content/dainty-gold-necklace-tablet@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/content/dainty-gold-necklace@1x.webp,
+                          img/content/dainty-gold-necklace@2x.webp 2x
+                        "
+                      />
+
+                      <!-- 1х: 324px; 2x: 648px -->
+                      <source
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/dainty-gold-necklace-tablet@1x.jpg 1x,
+                          img/content/dainty-gold-necklace-tablet@2x.jpg 2x
+                        "
+                      />
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img
+                        src="img/content/dainty-gold-necklace@1x.jpg"
+                        srcset="img/content/dainty-gold-necklace@2x.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="Gold chain"
+                      />
+                    </picture>
+                  </div>
+                  <h3 class="slider__name-product slider__name-product--chain">
+                    Gold chain
+                  </h3>
+                  <span class="slider__price">$215</span>
+                </a>
+              </li>
+              <li class="slider__item swiper-slide">
+                <a
+                  class="slider__product-link swiper__link"
+                  href="catalog.html"
+                >
+                  <div class="slider__img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/galaxy-earrings-tablet@1x.webp,
+                          img/content/galaxy-earrings-tablet@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/content/galaxy-earrings@1x.webp,
+                          img/content/galaxy-earrings@2x.webp 2x
+                        "
+                      />
+
+                      <!-- 1х: 324px; 2x: 648px -->
+                      <source
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/galaxy-earrings-tablet@1x.jpg 1x,
+                          img/content/galaxy-earrings-tablet@2x.jpg 2x
+                        "
+                      />
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img
+                        src="img/content/galaxy-earrings@1x.jpg"
+                        srcset="img/content/galaxy-earrings@2x.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="Galaxy earrings"
+                      />
+                    </picture>
+                  </div>
+                  <h3
+                    class="slider__name-product slider__name-product--earrings"
+                  >
+                    Galaxy earrings
+                  </h3>
+                  <span class="slider__price">$95</span>
+                </a>
+              </li>
+              <li class="slider__item swiper-slide">
+                <a class="slider__product-link" href="catalog.html">
+                  <div class="slider__img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/purple-gemstone-necklace-tablet@1x.webp,
+                          img/content/purple-gemstone-necklace-tablet@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/content/purple-gemstone-necklace@1x.webp,
+                          img/content/purple-gemstone-necklace@2x.webp 2x
+                        "
+                      />
+                      <!-- 1х: 324px; 2x: 648px -->
+                      <source
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/purple-gemstone-necklace-tablet@1x.jpg 1x,
+                          img/content/purple-gemstone-necklace-tablet@2x.jpg 2x
+                        "
+                      />
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img
+                        src="img/content/purple-gemstone-necklace@1x.jpg"
+                        srcset="img/content/purple-gemstone-necklace@2x.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="Necklace with amethyst"
+                      />
+                    </picture>
+                  </div>
+                  <h3
+                    class="slider__name-product slider__name-product--necklace"
+                  >
+                    Necklace with amethyst
+                  </h3>
+                  <span class="slider__price">$145</span>
+                </a>
+              </li>
+              <li class="slider__item swiper-slide">
+                <a
+                  class="slider__product-link swiper__link"
+                  href="catalog.html"
+                >
+                  <div class="slider__img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/layered-choker-necklace-tablet@1x.webp,
+                          img/content/layered-choker-necklace-tablet@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/content/layered-choker-necklace@1x.webp,
+                          img/content/layered-choker-necklace@2x.webp 2x
+                        "
+                      />
+                      <!-- 1х: 324px; 2x: 648px -->
+                      <source
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/layered-choker-necklace-tablet@1x.jpg 1x,
+                          img/content/layered-choker-necklace-tablet@2x.jpg 2x
+                        "
+                      />
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img
+                        src="img/content/layered-choker-necklace@1x.jpg"
+                        srcset="img/content/layered-choker-necklace@2x.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="Layered choker"
+                      />
+                    </picture>
+                  </div>
+                  <h3 class="slider__name-product slider__name-product--сhoker">
+                    Layered сhoker
+                  </h3>
+                  <span class="slider__price">$115</span>
+                </a>
+              </li>
+              <li class="slider__item swiper-slide">
+                <a
+                  class="slider__product-link swiper__link"
+                  href="catalog.html"
+                >
+                  <div class="slider__img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/dainty-gold-necklace-tablet@1x.webp,
+                          img/content/dainty-gold-necklace-tablet@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/content/dainty-gold-necklace@1x.webp,
+                          img/content/dainty-gold-necklace@2x.webp 2x
+                        "
+                      />
+
+                      <!-- 1х: 324px; 2x: 648px -->
+                      <source
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/dainty-gold-necklace-tablet@1x.jpg 1x,
+                          img/content/dainty-gold-necklace-tablet@2x.jpg 2x
+                        "
+                      />
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img
+                        src="img/content/dainty-gold-necklace@1x.jpg"
+                        srcset="img/content/dainty-gold-necklace@2x.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="Gold chain"
+                      />
+                    </picture>
+                  </div>
+                  <h3 class="slider__name-product slider__name-product--chain">
+                    Gold chain
+                  </h3>
+                  <span class="slider__price">$215</span>
+                </a>
+              </li>
+              <li class="slider__item swiper-slide">
+                <a
+                  class="slider__product-link swiper__link"
+                  href="catalog.html"
+                >
+                  <div class="slider__img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/galaxy-earrings-tablet@1x.webp,
+                          img/content/galaxy-earrings-tablet@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/content/galaxy-earrings@1x.webp,
+                          img/content/galaxy-earrings@2x.webp 2x
+                        "
+                      />
+
+                      <!-- 1х: 324px; 2x: 648px -->
+                      <source
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/galaxy-earrings-tablet@1x.jpg 1x,
+                          img/content/galaxy-earrings-tablet@2x.jpg 2x
+                        "
+                      />
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img
+                        src="img/content/galaxy-earrings@1x.jpg"
+                        srcset="img/content/galaxy-earrings@2x.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="Galaxy earrings"
+                      />
+                    </picture>
+                  </div>
+                  <h3
+                    class="slider__name-product slider__name-product--earrings"
+                  >
+                    Galaxy earrings
+                  </h3>
+                  <span class="slider__price">$95</span>
+                </a>
+              </li>
+              <li class="slider__item swiper-slide">
+                <a class="slider__product-link" href="catalog.html">
+                  <div class="slider__img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/purple-gemstone-necklace-tablet@1x.webp,
+                          img/content/purple-gemstone-necklace-tablet@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/content/purple-gemstone-necklace@1x.webp,
+                          img/content/purple-gemstone-necklace@2x.webp 2x
+                        "
+                      />
+                      <!-- 1х: 324px; 2x: 648px -->
+                      <source
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/purple-gemstone-necklace-tablet@1x.jpg 1x,
+                          img/content/purple-gemstone-necklace-tablet@2x.jpg 2x
+                        "
+                      />
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img
+                        src="img/content/purple-gemstone-necklace@1x.jpg"
+                        srcset="img/content/purple-gemstone-necklace@2x.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="Necklace with amethyst"
+                      />
+                    </picture>
+                  </div>
+                  <h3
+                    class="slider__name-product slider__name-product--necklace"
+                  >
+                    Necklace with amethyst
+                  </h3>
+                  <span class="slider__price">$145</span>
+                </a>
+              </li>
+              <li class="slider__item swiper-slide">
+                <a
+                  class="slider__product-link swiper__link"
+                  href="catalog.html"
+                >
+                  <div class="slider__img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/layered-choker-necklace-tablet@1x.webp,
+                          img/content/layered-choker-necklace-tablet@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/content/layered-choker-necklace@1x.webp,
+                          img/content/layered-choker-necklace@2x.webp 2x
+                        "
+                      />
+                      <!-- 1х: 324px; 2x: 648px -->
+                      <source
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/layered-choker-necklace-tablet@1x.jpg 1x,
+                          img/content/layered-choker-necklace-tablet@2x.jpg 2x
+                        "
+                      />
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img
+                        src="img/content/layered-choker-necklace@1x.jpg"
+                        srcset="img/content/layered-choker-necklace@2x.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="Layered choker"
+                      />
+                    </picture>
+                  </div>
+                  <h3 class="slider__name-product slider__name-product--сhoker">
+                    Layered сhoker
+                  </h3>
+                  <span class="slider__price">$115</span>
+                </a>
+              </li>
+              <li class="slider__item swiper-slide">
+                <a
+                  class="slider__product-link swiper__link"
+                  href="catalog.html"
+                >
+                  <div class="slider__img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/dainty-gold-necklace-tablet@1x.webp,
+                          img/content/dainty-gold-necklace-tablet@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/content/dainty-gold-necklace@1x.webp,
+                          img/content/dainty-gold-necklace@2x.webp 2x
+                        "
+                      />
+
+                      <!-- 1х: 324px; 2x: 648px -->
+                      <source
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/dainty-gold-necklace-tablet@1x.jpg 1x,
+                          img/content/dainty-gold-necklace-tablet@2x.jpg 2x
+                        "
+                      />
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img
+                        src="img/content/dainty-gold-necklace@1x.jpg"
+                        srcset="img/content/dainty-gold-necklace@2x.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="Gold chain"
+                      />
+                    </picture>
+                  </div>
+                  <h3 class="slider__name-product slider__name-product--chain">
+                    Gold chain
+                  </h3>
+                  <span class="slider__price">$215</span>
+                </a>
+              </li>
+              <li class="slider__item swiper-slide">
+                <a
+                  class="slider__product-link swiper__link"
+                  href="catalog.html"
+                >
+                  <div class="slider__img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/galaxy-earrings-tablet@1x.webp,
+                          img/content/galaxy-earrings-tablet@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          img/content/galaxy-earrings@1x.webp,
+                          img/content/galaxy-earrings@2x.webp 2x
+                        "
+                      />
+
+                      <!-- 1х: 324px; 2x: 648px -->
+                      <source
+                        media="(max-width: 1023px)"
+                        srcset="
+                          img/content/galaxy-earrings-tablet@1x.jpg 1x,
+                          img/content/galaxy-earrings-tablet@2x.jpg 2x
+                        "
+                      />
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img
+                        src="img/content/galaxy-earrings@1x.jpg"
+                        srcset="img/content/galaxy-earrings@2x.jpg 2x"
+                        width="270"
+                        height="284"
+                        alt="Galaxy earrings"
+                      />
+                    </picture>
+                  </div>
+                  <h3
+                    class="slider__name-product slider__name-product--earrings"
+                  >
+                    Galaxy earrings
+                  </h3>
+                  <span class="slider__price">$95</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="slider__pagination swiper-pagination"></div>
+        </section>
+
+        <section class="blog">
+          <h2>Blog</h2>
+          <a class="blog__link" href="#">Read All</a>
+          <div class="blog__container">
+            <article class="blog__articles">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="
+                    img/content/blog-care-mobile@1x.webp,
+                    img/content/blog-care-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1023px)"
+                  srcset="
+                    img/content/blog-care-tablet@1x.webp,
+                    img/content/blog-care-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/content/blog-care-desktop@1x.webp,
+                    img/content/blog-care-desktop@2x.webp 2x
+                  "
+                />
+                <!--  1х: 290px; 2x: 580px  -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    img/content/blog-care-mobile@1x.jpg 1x,
+                    img/content/blog-care-mobile@2x.jpg 2x
+                  "
+                />
+                <!--  1х: 339px; 2x: 678px  -->
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    img/content/blog-care-tablet@1x.jpg 1x,
+                    img/content/blog-care-tablet@2x.jpg 2x
+                  "
+                />
+                <!-- 1х: 285px; 2x: 570px -->
+                <img
+                  alt="decorations"
+                  width="285"
+                  height="300"
+                  src="img/content/blog-care-desktop@1x.jpg"
+                  srcset="img/content/blog-care-desktop@2x.jpg 2x"
+                />
+              </picture>
+              <div class="blog__wrapper blog__wrapper--care">
+                <time datetime="2019-09-30">September 30, 2019</time>
+                <h3>How to care for your jewellery</h3>
+                <a href="#">Read Article</a>
+              </div>
+            </article>
+
+            <article class="blog__articles">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="
+                    img/content/blog-power-mobile@1x.webp,
+                    img/content/blog-power-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1023px)"
+                  srcset="
+                    img/content/blog-power-tablet@1x.webp,
+                    img/content/blog-power-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/content/blog-power-desktop@1x.webp,
+                    img/content/blog-power-desktop@2x.webp 2x
+                  "
+                />
+                <!--  1х: 290px; 2x: 580px  -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    img/content/blog-power-mobile@1x.jpg 1x,
+                    img/content/blog-power-mobile@2x.jpg 2x
+                  "
+                />
+                <!--  1х: 339px; 2x: 678px  -->
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    img/content/blog-power-tablet@1x.jpg 1x,
+                    img/content/blog-power-tablet@2x.jpg 2x
+                  "
+                />
+                <!-- 1х: 285px; 2x: 570px -->
+                <img
+                  alt="crystals"
+                  width="285"
+                  height="300"
+                  src="img/content/blog-power-desktop@1x.jpg"
+                  srcset="img/content/blog-power-desktop@2x.jpg 2x"
+                />
+              </picture>
+              <div class="blog__wrapper blog__wrapper--crystals">
+                <time datetime="2019-09-23">September 23, 2019</time>
+                <h3>Power of crystals</h3>
+                <a href="#">Read Article</a>
+              </div>
+            </article>
+
+            <article class="blog__articles">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="
+                    img/content/blog-trends-mobile@1x.webp,
+                    img/content/blog-trends-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    img/content/blog-trends-tablet@1x.webp 1x,
+                    img/content/blog-trends-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/content/blog-trends-desktop@1x.webp,
+                    img/content/blog-trends-desktop@2x.webp 2x
+                  "
+                />
+
+                <!--  1х: 290px; 2x: 580px  -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    img/content/blog-trends-mobile@1x.jpg 1x,
+                    img/content/blog-trends-mobile@2x.jpg 2x
+                  "
+                />
+                <!--  1х: 339px; 2x: 678px  -->
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    img/content/blog-trends-tablet@1x.jpg 1x,
+                    img/content/blog-trends-tablet@2x.jpg 2x
+                  "
+                />
+                <!-- 1х: 285px; 2x: 570px -->
+                <img
+                  alt="girl with jewelry"
+                  width="285"
+                  height="300"
+                  src="img/content/blog-trends-desktop@1x.jpg"
+                  srcset="img/content/blog-trends-desktop@2x.jpg 2x"
+                />
+              </picture>
+              <div class="blog__wrapper blog__wrapper--trends">
+                <time datetime="2019-09-16">September 16, 2019</time>
+                <h3>AW 19 trends</h3>
+                <a href="#">Read Article</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="questions">
+          <div class="questions__container">
+            <h2>Frequently asked questions</h2>
+            <div
+              class="questions__wrapper accordion is-nojs"
+              data-accordion="questions"
+            >
+              <div
+                class="questions__item accordion__item is-active"
+                id="materials"
+                data-accordion-item
+              >
+                <button
+                  class="questions__button accordion__button"
+                  type="button"
+                  data-button="materials"
+                >
+                  What materials are <br />the jewellery made of?
+                </button>
+                <p>
+                  Our jewellerry is made of solid gold, silver or leather. Also,
+                  some jewellery contains precious and semiprecious stones and
+                  crystals.
+                </p>
+              </div>
+              <div
+                class="questions__item accordion__item"
+                id="delivery"
+                data-accordion-item
+              >
+                <button
+                  class="questions__button accordion__button"
+                  type="button"
+                  data-button="delivery"
+                >
+                  Which countries <br />do you deliver to?
+                </button>
+                <p>
+                  Our jewellerry is made of solid gold, silver or leather. Also,
+                  some jewellery contains precious and semiprecious stones and
+                  crystals.
+                </p>
+              </div>
+              <div
+                class="questions__item accordion__item"
+                id="payment"
+                data-accordion-item
+              >
+                <button
+                  class="questions__button accordion__button"
+                  type="button"
+                  data-button="payment"
+                >
+                  What are the <br />payment methods?
+                </button>
+                <p>
+                  Our jewellerry is made of solid gold, silver or leather. Also,
+                  some jewellery contains precious and semiprecious stones and
+                  crystals.
+                </p>
+              </div>
+              <div
+                class="questions__item accordion__item"
+                id="return"
+                data-accordion-item
+              >
+                <button
+                  class="questions__button accordion__button"
+                  type="button"
+                  data-button="return"
+                >
+                  Can I return the <br />jewellery if it didn&prime;t fit me?
+                </button>
+                <p>
+                  Our jewellerry is made of solid gold, silver or leather. Also,
+                  some jewellery contains precious and semiprecious stones and
+                  crystals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="gallery">
+          <h2><span>@</span>Chjewellery</h2>
+          <a href="#">Follow Us</a>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/content/gallery-earrings@1x.webp,
+                    img/content/gallery-earrings@2x.webp 2x
+                  "
+                />
+                <!-- 1х: 230px; 2x: 460px -->
+                <img
+                  src="img/content/gallery-earrings@1x.jpg"
+                  srcset="img/content/gallery-earrings@2x.jpg 2x"
+                  alt="Earrings"
+                  width="230"
+                  height="230"
+                />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/content/gallery-girl@1x.webp,
+                    img/content/gallery-girl@2x.webp 2x
+                  "
+                />
+                <!-- 1х: 399px; 2x: 798px -->
+                <img
+                  src="img/content/gallery-girl@1x.jpg"
+                  srcset="img/content/gallery-girl@2x.jpg 2x"
+                  alt="girl"
+                  width="399"
+                  height="412"
+                />
+              </picture>
+            </li>
+            <li class="gallery__item gallery__item--gallery-arms">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/content/gallery-arms@1x.webp,
+                    img/content/gallery-arms@2x.webp 2x
+                  "
+                />
+                <!-- 1х: 230px; 2x: 460px -->
+                <img
+                  src="img/content/gallery-arms@1x.jpg"
+                  srcset="img/content/gallery-arms@2x.jpg 2x"
+                  alt="hands with jewels"
+                  width="230"
+                  height="230"
+                />
+              </picture>
+            </li>
+            <li class="gallery__item gallery__item--earrings">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/content/gallery-gold-earrings@1x.webp,
+                    img/content/gallery-gold-earrings@2x.webp 2x
+                  "
+                />
+                <!-- 1х: 230px; 2x: 460px -->
+                <img
+                  src="img/content/gallery-gold-earrings@1x.jpg"
+                  srcset="img/content/gallery-gold-earrings@2x.jpg 2x"
+                  alt="gold earrings"
+                  width="230"
+                  height="230"
+                />
+              </picture>
+            </li>
+            <li class="gallery__item">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/content/gallery-jewel@1x.webp,
+                    img/content/gallery-jewel@2x.webp 2x
+                  "
+                />
+                <!-- 1х: 230px; 2x: 460px -->
+                <img
+                  src="img/content/gallery-jewel@1x.jpg"
+                  srcset="img/content/gallery-jewel@2x.jpg 2x"
+                  alt="Jewel"
+                  width="230"
+                  height="150"
+                />
+              </picture>
+            </li>
+
+            <li class="gallery__item">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/content/gallery-gold-jewelry@1x.webp,
+                    img/content/gallery-gold-jewelry@2x.webp 2x
+                  "
+                />
+                <!-- 1х: 230px; 2x: 460px -->
+                <img
+                  src="img/content/gallery-gold-jewelry@1x.jpg"
+                  srcset="img/content/gallery-gold-jewelry@2x.jpg 2x"
+                  alt="gold jewelry"
+                  width="230"
+                  height="150"
+                />
+              </picture>
+            </li>
+
+            <li class="gallery__item">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/content/gallery-girl-with-rings@1x.webp,
+                    img/content/gallery-girl-with-rings@2x.webp 2x
+                  "
+                />
+                <!-- 1х: 230px; 2x: 460px -->
+                <img
+                  src="img/content/gallery-girl-with-rings@1x.jpg"
+                  srcset="img/content/gallery-girl-with-rings@2x.jpg 2x"
+                  alt="girl with rings"
+                  width="230"
+                  height="150"
+                />
+              </picture>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__container">
+          <div class="page-footer__subscription">
+            <h3>The good stuff in&nbsp;your&nbsp;inbox</h3>
+            <p>News and updates from CH. No spam, we promise.</p>
+            <div class="page-footer__form-container">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <div class="page-footer__form-field" data-validate-type="email">
+                  <label>
+                    <span class="visually-hidden">Your E-mail</span>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Your E-mail"
+                    />
+                  </label>
+                  <div class="page-footer__error">Email is not correct</div>
+                </div>
+                <button class="page-footer__btn" type="submit">Sign Up</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="page-footer__wrapper">
+            <ul class="page-footer__order-list">
+              <li class="page-footer__item">
+                <a class="page-footer__link" href="#">Ordering & Payment</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link" href="#">Terms & Conditions</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link" href="#">Returns & Exchanges</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link" href="#">Delivery</a>
+              </li>
+            </ul>
+
+            <ul class="page-footer__about-list">
+              <li class="page-footer__item">
+                <a class="page-footer__link" href="#">About CH</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link" href="#">Stores & Hours</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link" href="#">Jobs</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link" href="#">Contact Us</a>
+              </li>
+            </ul>
+
+            <ul class="page-footer__social-list">
+              <li class="page-footer__item">
+                <a
+                  class="page-footer__social-link page-footer__social-link--facebook"
+                  href="#"
+                  aria-label="facebook"
+                >
+                  <svg width="8" height="15">
+                    <use href="img/sprite_auto.svg#icon-facebook"></use>
+                  </svg>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li class="page-footer__item">
+                <a
+                  class="page-footer__social-link page-footer__social-link--instagram"
+                  href="#"
+                  aria-label="instagram"
+                >
+                  <svg width="15" height="15">
+                    <use href="img/sprite_auto.svg#icon-instagram"></use>
+                  </svg>
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li class="page-footer__item">
+                <a
+                  class="page-footer__social-link"
+                  href="#"
+                  aria-label="pinterest"
+                >
+                  <svg width="15" height="15">
+                    <use href="img/sprite_auto.svg#icon-pinterest"></use>
+                  </svg>
+                  <span>Pinterest</span>
+                </a>
+              </li>
+              <li class="page-footer__item">
+                <a
+                  class="page-footer__social-link"
+                  href="#"
+                  aria-label="twitter"
+                >
+                  <svg width="15" height="13">
+                    <use href="img/sprite_auto.svg#icon-twitter"></use>
+                  </svg>
+                  <span>Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <section class="modal" data-modal="login">
+        <div class="modal__container">
+          <button class="modal__button-close" type="button" data-close-modal>
+            <span class="visually-hidden">Close</span>
+          </button>
+          <div class="modal__form popup">
+            <h2>Log In</h2>
+            <form
+              action="https://echo.htmlacademy.ru"
+              method="post"
+              data-form="registration"
+            >
+              <div class="form-login__field popup__field popup__field--email">
+                <label class="visually-hidden" for="login">Login</label>
+                <input
+                  id="login"
+                  type="email"
+                  name="login"
+                  placeholder="Your E-mail"
+                  required
+                />
+              </div>
+              <div
+                class="form-login__field popup__field popup__field--password"
+              >
+                <label
+                  ><input
+                    id="password"
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                /></label>
+              </div>
+              <a class="form-login__restore-link popup__support" href="#"
+                >Forgot your password?</a
+              >
+              <button class="form-login__button popup__button" type="submit">
+                Log In
+              </button>
+            </form>
+            <div class="modal__registration popup__wrapper">
+              <span>Don’t have an account?</span>
+              <a href="#">Sign up</a>
+            </div>
+          </div>
+        </div>
+        <div class="modal__overlay" data-modal="overlay"></div>
+      </section>
+    </div>
+    <div class="modal__success visually-hidden" data-modal="success">
+      Отправка формы выполнена
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

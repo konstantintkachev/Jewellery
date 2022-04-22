@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ппроект Jewellery" />
+    <title>Jewellery</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="preload"
+      href="fonts/poppins-medium.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/poppins-regular.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/poppins-bold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/cormorant-garamond-semi-bold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/cormorant-garamond-bold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/cormorant-garamond-italic.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="page-header__container">
+          <div class="page-header__header">
+            <button
+              class="page-header_btn"
+              type="button"
+              aria-label="Открыть меню"
+            ></button>
+            <div class="page-header__form">
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                <div class="page-header__form-field">
+                  <label>
+                    <span class="visually-hidden">Field of search</span>
+                    <input
+                      type="search"
+                      name="search"
+                      placeholder="Type here to search"
+                    />
+                  </label>
+                </div>
+                <button
+                  class="page-header__form-btn"
+                  type="submit"
+                  aria-label="Отправить форму"
+                >
+                  <svg width="14" height="14">
+                    <use href="img/sprite_auto.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <a class="page-header__logo" href="index.html">
+              <svg width="66" height="66">
+                <use href="img/sprite_auto.svg#logo"></use>
+              </svg>
+            </a>
+            <div class="page-header__menu">
+              <a class="page-header__login" href="login.html">Login</a>
+              <a class="page-header__cart" href="#">
+                <span class="page-header__cart-text"
+                  >Cart<span class="page-header__cart-number">0</span></span
+                >
+                <svg class="page-header__cart-icon" width="18" height="16">
+                  <use href="img/sprite_auto.svg#icon-basket"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <nav class="page-header__nav main-nav">
+            <div class="main-nav__container">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--first">
+                  <a class="main-nav__link" href="#">What’s new</a>
+                </li>
+                <li class="main-nav__item main-nav__item--second">
+                  <a class="main-nav__link" href="#">Chokers</a>
+                </li>
+                <li class="main-nav__item main-nav__item--third">
+                  <a class="main-nav__link" href="#">Necklaces</a>
+                </li>
+                <li class="main-nav__item main-nav__item--fourth">
+                  <a class="main-nav__link" href="#">Rings</a>
+                </li>
+                <li class="main-nav__item main-nav__item--fifth">
+                  <a class="main-nav__link" href="#">Earrings</a>
+                </li>
+              </ul>
+
+              <ul class="main-nav__info">
+                <li class="main-nav__info-item">
+                  <a class="main-nav__info-link" href="#">About CH</a>
+                </li>
+                <li class="main-nav__info-item">
+                  <a class="main-nav__info-link" href="#">Stores & Hours</a>
+                </li>
+                <li class="main-nav__info-item">
+                  <a class="main-nav__info-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main class="page-login">
+        <h1 class="visually-hidden">Jewellery - login page</h1>
+        <section class="popup">
+          <h2>Log In</h2>
+          <form
+            action="https://echo.htmlacademy.ru/"
+            method="get"
+            data-form="registration"
+          >
+            <div class="popup__field popup__field--email">
+              <label>
+                <input
+                  type="email"
+                  placeholder="Your E-mail"
+                  id="email"
+                  name="e-mail"
+                  required
+                />
+              </label>
+            </div>
+            <div class="popup__field popup__field--password">
+              <label>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  id="password"
+                  name="password"
+                  required
+                />
+              </label>
+            </div>
+            <a class="popup__support" href="#">Forgot your password?</a>
+            <button class="popup__button" type="submit">Log In</button>
+            <div class="popup__wrapper">
+              <span>Don’t have an account?</span>
+              <a href="#">Sign up</a>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <div class="page-footer__container">
+          <div class="page-footer__subscription">
+            <h3>The good stuff in&nbsp;your&nbsp;inbox</h3>
+            <p>News and updates from CH. No spam, we promise.</p>
+            <div class="page-footer__form-container">
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <div class="page-footer__form-field" data-validate-type="email">
+                  <label>
+                    <span class="visually-hidden">Your E-mail</span>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Your E-mail"
+                    />
+                  </label>
+                  <div class="page-footer__error">Email is not correct</div>
+                </div>
+                <button class="page-footer__btn" type="submit">Sign Up</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="page-footer__wrapper">
+            <ul class="page-footer__order-list">
+              <li class="page-footer__item">
+                <a class="page-footer__link" href="#">Ordering & Payment</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link" href="#">Terms & Conditions</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link" href="#">Returns & Exchanges</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link" href="#">Delivery</a>
+              </li>
+            </ul>
+
+            <ul class="page-footer__about-list">
+              <li class="page-footer__item">
+                <a class="page-footer__link" href="#">About CH</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link" href="#">Stores & Hours</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link" href="#">Jobs</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__link" href="#">Contact Us</a>
+              </li>
+            </ul>
+
+            <ul class="page-footer__social-list">
+              <li class="page-footer__item">
+                <a
+                  class="page-footer__social-link page-footer__social-link--facebook"
+                  href="#"
+                  aria-label="facebook"
+                >
+                  <svg width="8" height="15">
+                    <use href="img/sprite_auto.svg#icon-facebook"></use>
+                  </svg>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li class="page-footer__item">
+                <a
+                  class="page-footer__social-link page-footer__social-link--instagram"
+                  href="#"
+                  aria-label="instagram"
+                >
+                  <svg width="15" height="15">
+                    <use href="img/sprite_auto.svg#icon-instagram"></use>
+                  </svg>
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li class="page-footer__item">
+                <a
+                  class="page-footer__social-link"
+                  href="#"
+                  aria-label="pinterest"
+                >
+                  <svg width="15" height="15">
+                    <use href="img/sprite_auto.svg#icon-pinterest"></use>
+                  </svg>
+                  <span>Pinterest</span>
+                </a>
+              </li>
+              <li class="page-footer__item">
+                <a
+                  class="page-footer__social-link"
+                  href="#"
+                  aria-label="twitter"
+                >
+                  <svg width="15" height="13">
+                    <use href="img/sprite_auto.svg#icon-twitter"></use>
+                  </svg>
+                  <span>Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <section class="modal modal--preload" data-modal="login">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content login">
+          <h2>Log In</h2>
+          <div data-validate="data-validate">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <div
+                class="login__field login__field--email"
+                data-validate-type="email"
+              >
+                <label>
+                  <span class="visually-hidden">Your E-mail</span>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your E-mail"
+                    data-focus
+                  />
+                </label>
+                <div class="login__error">Email is not correct</div>
+              </div>
+
+              <div
+                class="login__field login__field--password"
+                data-validate-type="text"
+              >
+                <label>
+                  <span class="visually-hidden">Password</span>
+                  <input
+                    minlength="4"
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                  />
+                </label>
+                <div class="login__error">min 4 characters</div>
+              </div>
+              <a href="#" class="login__password-recovery"
+                >Forgot your password?</a
+              >
+              <button type="submit" class="button login__button">Log In</button>
+            </form>
+          </div>
+          <div class="login__account-recovery">
+            <span>Don’t have an account?</span>
+            <a href="#">Sign up</a>
+          </div>
+          <button
+            class="login__close"
+            type="button"
+            aria-label="close popup"
+            data-close-modal
+          ></button>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

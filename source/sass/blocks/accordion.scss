@@ -1,0 +1,55 @@
+.accordion__button {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 10px;
+    background-image: url("../img/svg/arrow-down.svg");
+    background-repeat: no-repeat;
+    top: 5px;
+    right: 0;
+
+    @include vp-1023 {
+      width: 25px;
+      height: 14px;
+    }
+  }
+}
+
+.is-active .accordion__button {
+  &::after {
+    background-image: url("../img/svg/arrow-up.svg");
+  }
+}
+
+.accordion__item p {
+  display: none;
+}
+
+.accordion__content {
+  display: none;
+}
+
+.is-nojs p {
+  display: block;
+}
+
+.is-nojs .accordion__content {
+  display: block;
+}
+
+.is-nojs .accordion__button {
+  &::after {
+    display: none;
+  }
+}
+
+.is-active p {
+  display: block;
+}
+
+.is-active .accordion__content {
+  display: block;
+}

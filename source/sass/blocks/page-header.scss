@@ -1,0 +1,365 @@
+.page-header {
+  position: relative;
+}
+
+.page-header.is-open {
+  @include vp-1023 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: $color-medium-wood;
+  }
+}
+
+.page-header__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: $vp-1230;
+  padding-top: 40px;
+  padding-right: 30px;
+  padding-bottom: 35px;
+  padding-left: 30px;
+
+  @include vp-1023 {
+    display: block;
+    padding: 84px 45px 42px;
+  }
+
+  @include vp-767 {
+    padding: 50px 15px 42px;
+  }
+}
+
+.page-header.is-open .page-header__header {
+  @include vp-767 {
+    padding-bottom: 37px;
+  }
+}
+
+.page-header__container {
+  @include vp-1023 {
+    position: relative;
+  }
+}
+
+.page-header.is-open .page-header__container {
+  @include vp-1023 {
+    padding-top: 51px;
+    padding-bottom: 112px;
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  display: block;
+  transform: translate(-50%);
+
+  @include vp-767 {
+    top: 20px;
+    width: 52px;
+    height: 52px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+
+  &:not(a[href]) {
+    pointer-events: none;
+  }
+}
+
+.page-header__logo svg {
+  fill: $color-medium-wood;
+
+  @include vp-767 {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.page-header.is-open .page-header__logo svg {
+  @include vp-1023 {
+    fill: $color-default-white;
+  }
+}
+
+.page-header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 310px;
+  padding-top: 2px;
+  font-size: 14px;
+
+  @include vp-1023 {
+    display: block;
+    max-width: none;
+    padding: 0;
+  }
+}
+
+.page-header__login {
+  margin-left: 40px;
+
+  @include vp-1023 {
+    position: absolute;
+    bottom: 82px;
+    left: 45px;
+    display: none;
+    margin: 0;
+    font-size: 18px;
+    line-height: 23px;
+    color: $color-default-white;
+  }
+
+  @include vp-767 {
+    bottom: 91px;
+    left: 15px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.page-header.is-open .page-header__login {
+  @include vp-1023 {
+    display: block;
+  }
+}
+
+.page-header__cart {
+  margin-left: 37px;
+
+  @include vp-1023 {
+    position: absolute;
+    top: 54px;
+    right: 44px;
+    margin: 0;
+  }
+
+  @include vp-767 {
+    top: 37px;
+    right: 14px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.page-header__cart-icon {
+  display: none;
+
+  @include vp-1023 {
+    display: block;
+    width: 20px;
+    height: 18px;
+    fill: $color-transparent;
+    stroke: $color-wood-bark;
+  }
+}
+
+.page-header.is-open .page-header__cart-icon {
+  @include vp-1023 {
+    stroke: $color-default-white;
+  }
+}
+
+.page-header__cart-number {
+  margin-left: 5px;
+}
+
+.page-header__cart-text {
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.page-header_btn {
+  display: none;
+
+  @include vp-1023 {
+    position: absolute;
+    top: 46px;
+    left: 42px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: $color-transparent;
+    border: 0;
+    cursor: pointer;
+  }
+
+  @include vp-767 {
+    top: 29px;
+    left: 12px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.page-header_btn::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 3px;
+  width: 25px;
+  height: 2px;
+  background-color: $color-default-black;
+  box-shadow: 0 8px 0 0 $color-default-black, 0 16px 0 0 $color-default-black;
+}
+
+.page-header.is-open .page-header_btn::before {
+  background-color: $color-default-white;
+  box-shadow: 0 8px 0 0 $color-default-white, 0 16px 0 0 $color-default-white;
+}
+
+.page-header__header--catalog {
+  padding-bottom: 45px;
+}
+
+.page-header__form {
+  position: relative;
+  width: 225px;
+  font-size: 14px;
+
+  @include vp-1023 {
+    display: none;
+    width: 100%;
+  }
+}
+
+.page-header.is-open .page-header__form {
+  display: block;
+}
+
+.page-header__form input {
+  width: 100%;
+  padding-top: 9px;
+  padding-right: 10px;
+  padding-bottom: 9px;
+  padding-left: 28px;
+  border: 2px solid $color-transparent;
+  border-radius: 0;
+
+  @include vp-1023 {
+    padding-bottom: 7px;
+    padding-left: 50px;
+    color: $color-default-white;
+    background-color: rgba($color-default-white, 0.15);
+    border-radius: 21px;
+  }
+
+  &::placeholder {
+    font-weight: 500;
+    color: $color-of-zorba;
+
+    @include vp-1023 {
+      color: $color-transparent;
+    }
+  }
+
+  &:hover {
+    border-bottom-color: $color-of-zorba;
+
+    @include vp-1023 {
+      border-color: $color-default-white;
+    }
+  }
+
+  &:focus {
+    border-bottom-color: $color-default-black;
+    outline: none;
+
+    @include vp-1023 {
+      border-color: $color-default-white;
+    }
+  }
+}
+
+.page-header__form-btn {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  margin-top: -6px;
+  padding: 0;
+  background-color: $color-transparent;
+  border: none;
+  cursor: pointer;
+
+  @include vp-1023 {
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+  }
+}
+
+.page-header__form-btn svg {
+  @include vp-1023 {
+    width: 16px;
+    height: 16px;
+    fill: $color-default-white;
+  }
+}
+
+.page-header__form-btn:active svg {
+  opacity: 0.3;
+}
