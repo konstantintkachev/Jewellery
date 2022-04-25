@@ -4,6 +4,7 @@
   margin: 0 auto;
   text-align: center;
   padding: 30px;
+  padding-top: 59px;
 
   @include vp-1023 {
     padding: 39px 45px 30px;
@@ -22,7 +23,7 @@
   line-height: 44px;
   font-family: $ff-cormorant-garamond;
   letter-spacing: 0.03em;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 22px;
 
   @include vp-1023 {

@@ -10,7 +10,7 @@
 .main-nav__container {
   max-width: $vp-1230;
   margin: 0 auto;
-  padding-top: 29px;
+  padding-top: 25px;
 
   @include vp-1023 {
     padding: 4px 45px 18px;
@@ -88,7 +88,7 @@
 }
 
 .main-nav__item--fifth {
-  margin-right: 0px;
+  margin-right: 0;
   margin-left: 19px;
 }
 

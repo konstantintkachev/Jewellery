@@ -218,7 +218,7 @@
   }
 }
 
-.page-header_btn {
+.page-header__btn {
   display: none;
 
   @include vp-1023 {
@@ -255,7 +255,7 @@
   }
 }
 
-.page-header_btn::before {
+.page-header__btn::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -266,7 +266,7 @@
   box-shadow: 0 8px 0 0 $color-default-black, 0 16px 0 0 $color-default-black;
 }
 
-.page-header.is-open .page-header_btn::before {
+.page-header.is-open .page-header__btn::before {
   background-color: $color-default-white;
   box-shadow: 0 8px 0 0 $color-default-white, 0 16px 0 0 $color-default-white;
 }
@@ -292,7 +292,7 @@
 
 .page-header__form input {
   width: 100%;
-  padding-top: 9px;
+  padding-top: 4px;
   padding-right: 10px;
   padding-bottom: 9px;
   padding-left: 28px;
