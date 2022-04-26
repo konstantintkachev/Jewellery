@@ -2,12 +2,12 @@
   position: relative;
   margin: 0 auto;
   max-width: 430px;
-  padding: 187px 45px 60px;
+  padding: 166px 45px 55px;
   background-color: $color-desert-storm;
 
   @include vp-1023 {
     max-width: 442px;
-    padding: 187px 51px 60px;
+    padding: 166px 51px 60px;
   }
 
   @include vp-767 {
@@ -80,6 +80,10 @@
   }
 }
 
+.popup__field--email {
+  margin-bottom: 27px;
+}
+
 .popup__support {
   display: block;
   max-width: 150px;
@@ -90,6 +94,7 @@
   line-height: 18px;
   text-align: end;
   color: $color-of-zorba;
+  margin-top: 5px;
 
   @include vp-767 {
     margin-bottom: 34px;
@@ -116,6 +121,7 @@
   padding: 22px;
   padding-bottom: 23px;
   width: 100%;
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;

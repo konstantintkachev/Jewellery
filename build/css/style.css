@@ -799,7 +799,7 @@ button,
   align-items: flex-start;
   margin: 0 auto;
   max-width: 1230px;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-right: 30px;
   padding-bottom: 35px;
   padding-left: 30px;
@@ -834,7 +834,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 310px;
-  padding-top: 2px;
+  padding-top: 12px;
   font-size: 14px;
 }
 
@@ -904,7 +904,7 @@ button,
 
 .page-header__form input {
   width: 100%;
-  padding-top: 4px;
+  padding-top: 14px;
   padding-right: 10px;
   padding-bottom: 9px;
   padding-left: 28px;
@@ -968,7 +968,7 @@ button,
 .main-nav__container {
   max-width: 1230px;
   margin: 0 auto;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 .main-nav__container--catalog {
@@ -1591,7 +1591,7 @@ button,
   font-size: 34px;
   line-height: 44px;
   font-family: "Cormorant-Garamond", "Arial", sans-serif;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.5px;
   margin: 0;
   margin-bottom: 10px;
 }
@@ -2171,7 +2171,7 @@ button,
   position: relative;
   margin: 0 auto;
   max-width: 430px;
-  padding: 187px 45px 60px;
+  padding: 166px 45px 55px;
   background-color: #f0eae4;
 }
 
@@ -2255,6 +2255,10 @@ button,
   outline: none;
 }
 
+.popup__field--email {
+  margin-bottom: 27px;
+}
+
 .popup__support {
   display: block;
   max-width: 150px;
@@ -2265,6 +2269,7 @@ button,
   line-height: 18px;
   text-align: end;
   color: #9b9997;
+  margin-top: 5px;
 }
 
 .popup__support:active {
@@ -2276,6 +2281,7 @@ button,
   padding: 22px;
   padding-bottom: 23px;
   width: 100%;
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
@@ -3047,12 +3053,12 @@ button,
   }
 
   .form-filter__fields {
-    margin-top: 21px;
+    margin-top: 25px;
     padding-left: 14px;
   }
 
   .form-filter__field:not(:last-child) {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 
   .form-filter__field label {
@@ -3188,7 +3194,7 @@ button,
 
   .popup {
     max-width: 442px;
-    padding: 187px 51px 60px;
+    padding: 166px 51px 60px;
   }
 
   .popup__wrapper a {
@@ -3237,6 +3243,12 @@ button,
   .is-mobile .form-filter__button-reset {
     margin: 0 20px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1023px) and (max-width: 1023px) {
+  .is-mobile .form-filter__item {
+    padding-bottom: 35px;
   }
 }
 
@@ -3520,7 +3532,7 @@ button,
   .page-footer__wrapper {
     -ms-grid-columns: none;
     grid-template-columns: none;
-    padding: 46px 0 0;
+    padding: 49px 0 0;
     row-gap: 20px;
   }
 
@@ -3577,6 +3589,7 @@ button,
   }
 
   .catalog__products {
+    margin: 0 auto;
     margin-top: 2px;
   }
 

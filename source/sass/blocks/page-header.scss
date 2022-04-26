@@ -22,7 +22,7 @@
   align-items: flex-start;
   margin: 0 auto;
   max-width: $vp-1230;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-right: 30px;
   padding-bottom: 35px;
   padding-left: 30px;
@@ -108,7 +108,7 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 310px;
-  padding-top: 2px;
+  padding-top: 12px;
   font-size: 14px;
 
   @include vp-1023 {
@@ -292,7 +292,7 @@
 
 .page-header__form input {
   width: 100%;
-  padding-top: 4px;
+  padding-top: 14px;
   padding-right: 10px;
   padding-bottom: 9px;
   padding-left: 28px;
