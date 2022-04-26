@@ -846,7 +846,7 @@
               method="post"
               data-form="registration"
             >
-              <div class="form-login__field popup__field popup__field--email">
+              <div class="modal__field popup__field popup__field--email">
                 <label
                   ><input
                     id="login"
@@ -856,9 +856,7 @@
                     required
                 /></label>
               </div>
-              <div
-                class="form-login__field popup__field popup__field--password"
-              >
+              <div class="modal__field popup__field popup__field--password">
                 <label
                   ><input
                     id="password"
@@ -868,10 +866,10 @@
                     required
                 /></label>
               </div>
-              <a class="form-login__restore-link popup__support" href="#"
+              <a class="modal__restore-link popup__support" href="#"
                 >Forgot your password?</a
               >
-              <button class="form-login__button popup__button" type="submit">
+              <button class="modal__button popup__button" type="submit">
                 Log In
               </button>
             </form>
@@ -882,10 +880,10 @@
           </div>
         </div>
         <div class="modal__overlay" data-modal="overlay"></div>
+        <div class="modal__success visually-hidden" data-modal="success">
+          Отправка формы выполнена
+        </div>
       </section>
-    </div>
-    <div class="modal__success visually-hidden" data-modal="success">
-      Отправка формы выполнена
     </div>
 
     <script src="js/vendor.min.js"></script>
